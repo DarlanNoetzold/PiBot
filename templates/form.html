@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<title>Controle web Pibot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/estilo.css') }}">
+</head>
+
+<body class="jumbotron">
+
+	<div class="page-header text-center">
+	  <img src="{{url_for('static', filename='img/nasa_logo.png') }}">
+	  <h1>NASA SPACE CONTROL</h1>
+	</div>
+
+	<div class="container">
+		<img src="http://192.168.1.60:8080/?action=stream">
+		<p>
+			Distância: <span id="distancia">0</span> cm
+		</p>
+	</div>
+
+	<div class="container">
+		<button  value="w" id="w">
+  			<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+		</button>
+		
+		<button  value="a" id="a">
+			<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+		</button>
+
+		<button  value="d" id="d">
+			<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+		</button>
+
+		<button  value="s" id="s">
+			<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+		</button>
+	
+		<button  value="q" id="q">
+			<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+		</button>	
+	</div>
+
+	<script  src="{{url_for('static', filename='js/jquery-3.1.1.min.js') }}"></script>
+	<script  src="{{url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

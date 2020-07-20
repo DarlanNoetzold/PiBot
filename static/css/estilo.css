@@ -1,0 +1,13 @@
+#w,#s,#q {
+	display: block;
+	margin: 0 auto;
+}
+
+button {
+	width: 100px;
+	height: 50px;
+}
+
+.container {
+	text-align: center;
+}
